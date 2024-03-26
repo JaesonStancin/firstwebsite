@@ -1,32 +1,48 @@
-.blue-text{
-    color:blue;
+.madimi-one-regular {
+  font-family: "Madimi One", sans-serif;
+  font-weight: 200;
+  font-style: normal;
 }
-.red-text{
-    color:crimson;
-}.birthstone-bounce-regular {
-    font-family: "Birthstone Bounce", cursive;
-    font-weight: 400;
-    font-style: normal;
-  }
-  .container{
-display:flex;
-flex-direction: column;
-align-items: center;
-  }
-  .tiles-container{
-display: flex;
-flex-direction: row;
+.carlito-regular {
+  font-family: "Carlito", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
+.carlito-bold {
+  font-family: "Carlito", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.carlito-regular-italic {
+  font-family: "Carlito", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.carlito-bold-italic {
+  font-family: "Carlito", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tiles-container{
+  display: flex;
+  flex-direction: row;
 }
 .tile-container{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    width: 200px;
-    border: 3px;
-    border-radius: 3px;
-    margin: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: 400;
+  border: 3px;
+  border-radius: 3px;
+  margin: 3px;
 }
-
-  
-  
