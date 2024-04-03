@@ -12,11 +12,23 @@
     </p>
     <button id="runSimulation"> Run Simulation</button>  
 </body>
+
+
     <script> 
-var clicks = 0;
+
+
+function hanoi(disk, source, dest, aux){
+    if(disk > 0){
+    return hanoi(disk-1, source, aux, dest)
+     + "Moved " + disk + " from " + source + " to " + dest + "."
+     + hanoi(disk -1, aux, dest, source);
+}
+return "";
+}
+
     function updateContent(){
-        clicks++;
-        var output = "You've clicked " + clicks + " times!";
+        var output = honoi(3, "A", "C", "B") ;
+       
         document.getElementById("output").textContent = output;
 
     }
