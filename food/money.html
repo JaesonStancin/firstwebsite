@@ -15,7 +15,7 @@
                 
                     <li class="tile-container ">
                         <h3 class="carlito-bold">idk</h3>
-                        <a href="graphicsportfolio.html">
+                        <a href="money.html">
                             <img width="95%" src="img/Screenshot 2024-02-23 113201.png" />
                         </a>
                         <p class="carlito-regular">
@@ -25,7 +25,7 @@
                     
                     <li class="tile-container ">
                         <h3 class="carlito-bold">idk</h3>
-                        <a href="graphicsportfolio.html">
+                        <a href="money.html">
                             <img width="95%" src="img/Screenshot 2024-02-29 131753.png" />
                         </a>
                         <p class="carlito-regular">
@@ -35,7 +35,7 @@
                     
                     <li class="tile-container ">
                         <h3 class="carlito-bold">ART</h3>
-                        <a href="graphicsportfolio.html">
+                        <a href="money.html">
                             <img width="95%" src="img/Screenshot 2023-10-02 151139.png" />
                         </a>
                         <p class="carlito-regular">
@@ -46,4 +46,42 @@
             </ul>
         </div>
     </body>
+</html>
+
+<html>
+<head>
+<title>Towers of Hanoi</title>
+
+</head>
+    <body>
+    <h1>
+        Towers of Hanoi
+    </h1>
+    <p id="output">
+        Simulate Towers of Hanoi for 3 disks and 3 posts
+    </p>
+    <button id="runSimulation"> Run Simulation</button>  
+</body>
+
+
+    <script> 
+
+
+function hanoi(disk, source, dest, aux){
+    if(disk > 0){
+    return hanoi(disk-1, source, aux, dest)
+     + "Moved " + disk + " from " + source + " to " + dest + "."
+     + hanoi(disk -1, aux, dest, source);
+}
+return "";
+}
+
+    function updateContent(){
+        var output = honoi(3, "A", "C", "B") ;
+       
+        document.getElementById("output").textContent = output;
+
+    }
+    document.getElementById("runSimulation").addEventListener("click", updateContent);
+    </script>
 </html>
